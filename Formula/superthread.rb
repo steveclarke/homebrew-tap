@@ -2,9 +2,9 @@ class Superthread < Formula
   desc "CLI for Superthread project management"
   homepage "https://github.com/steveclarke/superthread"
   url "https://github.com/steveclarke/superthread.git",
-      tag:      "v0.5.1",
-      revision: "4627383a26588f44a2aaa409533462492680ffe0"
-  version "0.5.1"
+      tag:      "v0.5.2",
+      revision: "146812eb568a1dca8f72f6129f47bddbb10fbbab"
+  version "0.5.2"
   license "MIT"
   head "https://github.com/steveclarke/superthread.git", branch: "master"
 
