@@ -2,9 +2,9 @@ class Superthread < Formula
   desc "CLI for Superthread project management"
   homepage "https://github.com/steveclarke/superthread"
   url "https://github.com/steveclarke/superthread.git",
-      tag:      "v0.7.2",
-      revision: "5e8014d83276d80a392acc1df0b6ba321a475cb7"
-  version "0.7.2"
+      tag:      "v0.7.3",
+      revision: "813c20f70489eee278117a4066f7fd4d2d09c050"
+  version "0.7.3"
   license "MIT"
   head "https://github.com/steveclarke/superthread.git", branch: "master"
 
@@ -14,6 +14,7 @@ class Superthread < Formula
 
   def install
     ENV["GEM_HOME"] = libexec
+    ENV["GEM_PATH"] = libexec
     system "gem", "build", "superthread.gemspec"
     system "gem", "install", "--no-document", "superthread-#{version}.gem"
 
