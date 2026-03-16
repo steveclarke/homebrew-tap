@@ -3,7 +3,7 @@ class Superthread < Formula
   homepage "https://github.com/steveclarke/superthread"
   url "https://github.com/steveclarke/superthread.git",
       tag:      "v0.8.1",
-      revision: "8cc49f16a4c623f33e9b3697cf9cf4c108bccf0f"
+      revision: "cc638e7120608f479d395234efe0db70b4f133bc"
   version "0.8.1"
   license "MIT"
   head "https://github.com/steveclarke/superthread.git", branch: "master"
