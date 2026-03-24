@@ -2,9 +2,9 @@ class OutportCrm < Formula
   desc "CLI for Outport CRM"
   homepage "https://github.com/myunio/outport-clients"
   url "https://github.com/myunio/outport-clients.git",
-      tag:      "crm-cli/v0.4.0",
-      revision: "57f892679624e778685c7e9a8a7d333d7c42bb38"
-  version "0.4.0"
+      tag:      "crm-cli/v0.5.0",
+      revision: "551292131024532ab235ac395ba002fad1f25417"
+  version "0.5.0"
   license "MIT"
 
   depends_on "pkgconf" => :build
