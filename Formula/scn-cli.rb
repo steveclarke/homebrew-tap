@@ -15,10 +15,10 @@ class ScnCli < Formula
   homepage "https://github.com/steveclarke/scn"
   url "https://github.com/steveclarke/scn.git",
       using:    ScnCliDownloadStrategy,
-      tag:      "scn-cli-v0.1.0",
-      revision: "6cd59e1fd2dcf90afa54bfc86f39b27b50448fb2"
+      tag:      "scn-cli-v0.1.1",
+      revision: "56783586891aa4c4e894e043605074cb85f58e98"
   license "MIT"
-  version "0.1.0"
+  version "0.1.1"
   head "https://github.com/steveclarke/scn.git",
        using:  ScnCliDownloadStrategy,
        branch: "master"
