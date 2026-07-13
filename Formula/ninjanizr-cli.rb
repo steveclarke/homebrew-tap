@@ -5,13 +5,13 @@
 class NinjanizrCli < Formula
   desc "Agent-first CLI for Ninjanizr inventory"
   homepage "https://app.ninjanizr.com"
-  version "0.2.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/steveclarke/homebrew-tap/releases/download/ninjanizr-cli-v0.2.0/ninjanizr-cli_0.2.0_darwin_amd64.tar.gz"
-      sha256 "f3e54b6695493c7e335287016f8e75dcee697f4167c89103365692f9ba56344e"
+      url "https://github.com/steveclarke/homebrew-tap/releases/download/ninjanizr-cli-v0.3.1/ninjanizr-cli_0.3.1_darwin_amd64.tar.gz"
+      sha256 "63de6cee2956145be832031030009b54e42c13d5d3763f157b942b97465aa932"
 
       define_method(:install) do
         bin.install "nj"
@@ -21,8 +21,8 @@ class NinjanizrCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/steveclarke/homebrew-tap/releases/download/ninjanizr-cli-v0.2.0/ninjanizr-cli_0.2.0_darwin_arm64.tar.gz"
-      sha256 "3d063b0cacd47eca51cd0fa971a52a7638b6454377955f25a56b85f20dd5047f"
+      url "https://github.com/steveclarke/homebrew-tap/releases/download/ninjanizr-cli-v0.3.1/ninjanizr-cli_0.3.1_darwin_arm64.tar.gz"
+      sha256 "efc96bcfb0a1391e303066dff890f20909ca453bffd78dc94d86ec5f4adac570"
 
       define_method(:install) do
         bin.install "nj"
@@ -35,8 +35,8 @@ class NinjanizrCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steveclarke/homebrew-tap/releases/download/ninjanizr-cli-v0.2.0/ninjanizr-cli_0.2.0_linux_amd64.tar.gz"
-      sha256 "4500f900bbe55b539723dcec63f9dccca09de0c890469a3f6f75a5879ef620e7"
+      url "https://github.com/steveclarke/homebrew-tap/releases/download/ninjanizr-cli-v0.3.1/ninjanizr-cli_0.3.1_linux_amd64.tar.gz"
+      sha256 "1bf2bc2bd170309554eda235546bb84f1890a93f3e9dd2edeb717e564a161edb"
 
       define_method(:install) do
         bin.install "nj"
@@ -46,8 +46,8 @@ class NinjanizrCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steveclarke/homebrew-tap/releases/download/ninjanizr-cli-v0.2.0/ninjanizr-cli_0.2.0_linux_arm64.tar.gz"
-      sha256 "f875c57adaabe077f76c8ddd0ad4d0417ba8b5fd710b20045e8021ec24dac8ed"
+      url "https://github.com/steveclarke/homebrew-tap/releases/download/ninjanizr-cli-v0.3.1/ninjanizr-cli_0.3.1_linux_arm64.tar.gz"
+      sha256 "df50115b59875e1d8bc5115c1f4b1d556d74662c50ec1068c0cc6e7e9444c243"
 
       define_method(:install) do
         bin.install "nj"
