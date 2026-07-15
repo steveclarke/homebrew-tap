@@ -5,13 +5,13 @@
 class Ct < Formula
   desc "Agent-first CLI for Clevertakes"
   homepage "https://github.com/steveclarke/clevertakes"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/steveclarke/homebrew-tap/releases/download/ct-cli-v0.1.0/ct-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "76c4b1d9e3c2d5447de1f02fdb404f91d92232a8b83f3d57efd960c7a574aae9"
+      url "https://github.com/steveclarke/homebrew-tap/releases/download/ct-cli-v0.1.1/ct-cli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "ee76ffa6e7cd87581d1e37bbdf71b69ad6e3d7c68ab7eb3a8ba29b2e0b5cab0e"
 
       define_method(:install) do
         bin.install "ct"
@@ -21,8 +21,8 @@ class Ct < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/steveclarke/homebrew-tap/releases/download/ct-cli-v0.1.0/ct-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9e8658347357957a3cc866a37871e094b8dd578a6f3be4cd0badf7d41dda6119"
+      url "https://github.com/steveclarke/homebrew-tap/releases/download/ct-cli-v0.1.1/ct-cli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "91d935ac2740c1bf0fe0eb94dacc78b681bf98b453b2978e604c33cc1436bb1f"
 
       define_method(:install) do
         bin.install "ct"
@@ -35,8 +35,8 @@ class Ct < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steveclarke/homebrew-tap/releases/download/ct-cli-v0.1.0/ct-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "0d29dad2a2eea3ac6bcb1824e1af118e57d38e6b0aab49199143c86edc428f95"
+      url "https://github.com/steveclarke/homebrew-tap/releases/download/ct-cli-v0.1.1/ct-cli_0.1.1_linux_amd64.tar.gz"
+      sha256 "79adc1fcef4cbbff97a46b025f13e27da071efca642b62feb5aca90cca6758f9"
 
       define_method(:install) do
         bin.install "ct"
@@ -46,8 +46,8 @@ class Ct < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steveclarke/homebrew-tap/releases/download/ct-cli-v0.1.0/ct-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "03aec17c4b909efb6f31e2fd0da01dcf067c006315e32804675462d93be825f4"
+      url "https://github.com/steveclarke/homebrew-tap/releases/download/ct-cli-v0.1.1/ct-cli_0.1.1_linux_arm64.tar.gz"
+      sha256 "ddfcb8b37bb17ec8cf69cd0ce6186da8953ecda38a97d5be06d217b333b0c996"
 
       define_method(:install) do
         bin.install "ct"
