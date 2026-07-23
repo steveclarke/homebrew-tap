@@ -5,13 +5,13 @@
 class Ucmix < Formula
   desc "Control PreSonus StudioLive mixers over UCNET (unofficial)"
   homepage "https://github.com/steveclarke/ucmix"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/steveclarke/ucmix/releases/download/v0.1.0/ucmix_0.1.0_darwin_amd64.tar.gz"
-      sha256 "54d1f552fcd3aa89a004896c12cbca0d8e29e83bfbf45d7f7067b5fd605d245f"
+      url "https://github.com/steveclarke/ucmix/releases/download/v0.2.0/ucmix_0.2.0_darwin_amd64.tar.gz"
+      sha256 "aaea9c2496c54442a21516619a82fcaba8c731bcaaa53775626536a93b96a811"
 
       define_method(:install) do
         bin.install "ucmix"
@@ -21,8 +21,8 @@ class Ucmix < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/steveclarke/ucmix/releases/download/v0.1.0/ucmix_0.1.0_darwin_arm64.tar.gz"
-      sha256 "5d810fe120dfe106391c713d19c1f8b278640680f3f58902f05d3021b84c6d54"
+      url "https://github.com/steveclarke/ucmix/releases/download/v0.2.0/ucmix_0.2.0_darwin_arm64.tar.gz"
+      sha256 "0621640b5832b609f32c56bda5b99516f516b30698a621a236a101929586b662"
 
       define_method(:install) do
         bin.install "ucmix"
@@ -35,8 +35,8 @@ class Ucmix < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steveclarke/ucmix/releases/download/v0.1.0/ucmix_0.1.0_linux_amd64.tar.gz"
-      sha256 "7a1bc89c4a7af58ace6568dbfb981a930390fd83277638131bb8a036f687265f"
+      url "https://github.com/steveclarke/ucmix/releases/download/v0.2.0/ucmix_0.2.0_linux_amd64.tar.gz"
+      sha256 "b0cf359aaebf7ab6158f5d161bb2fa8a403ecb067415358a4e8ded5f431e964e"
       define_method(:install) do
         bin.install "ucmix"
         bash_completion.install "completions/ucmix.bash" => "ucmix"
@@ -45,8 +45,8 @@ class Ucmix < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steveclarke/ucmix/releases/download/v0.1.0/ucmix_0.1.0_linux_arm64.tar.gz"
-      sha256 "c6fc0e5bfd1ea2ee1ed3be9bd9388165509661e7d8092691ab330bd589a49d90"
+      url "https://github.com/steveclarke/ucmix/releases/download/v0.2.0/ucmix_0.2.0_linux_arm64.tar.gz"
+      sha256 "4c2a177cb691d8485a7c60a5ce8109466b0674dedc01635411fd7b2173bc3799"
       define_method(:install) do
         bin.install "ucmix"
         bash_completion.install "completions/ucmix.bash" => "ucmix"
