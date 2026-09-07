@@ -1,6 +1,6 @@
 cask "gander" do
-  version "0.1.30"
-  sha256 "cfd9b654fc0d9439766d4a94e94880f74e64f1e89075d462c8a3db0a137c76d7"
+  version "0.1.31"
+  sha256 "0f9c0511778f55196931a01c6c94e2a0483746a9740d0e70ab943e6531f51df5"
 
   url "https://github.com/steveclarke/gander/releases/download/v#{version}/Gander-#{version}-arm64.dmg"
   name "Gander"
