@@ -5,13 +5,13 @@
 class Outport < Formula
   desc "Dev port manager for multi-project, multi-worktree development"
   homepage "https://outport.app"
-  version "0.44.0"
+  version "0.45.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/steveclarke/outport/releases/download/v0.44.0/outport_0.44.0_darwin_amd64.tar.gz"
-      sha256 "62cf0e254f3fdcb7042ff92f42b61f599e9b99117a0663ba8f7c31721f0ff34f"
+      url "https://github.com/steveclarke/outport/releases/download/v0.45.0/outport_0.45.0_darwin_amd64.tar.gz"
+      sha256 "9759272c25fc88387b00cd0ed5658ca1fbecf7e3676228818d42fa239ef370c8"
 
       define_method(:install) do
         bin.install "outport"
@@ -21,8 +21,8 @@ class Outport < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/steveclarke/outport/releases/download/v0.44.0/outport_0.44.0_darwin_arm64.tar.gz"
-      sha256 "2d293195f6a8f2b0472e0585e760595997e9156934fee40d2e590f1f527e49f7"
+      url "https://github.com/steveclarke/outport/releases/download/v0.45.0/outport_0.45.0_darwin_arm64.tar.gz"
+      sha256 "b35c91f138b71d594722f796a7d735fe7cde8916cd268c810cfdbcdc80480449"
 
       define_method(:install) do
         bin.install "outport"
@@ -35,8 +35,8 @@ class Outport < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steveclarke/outport/releases/download/v0.44.0/outport_0.44.0_linux_amd64.tar.gz"
-      sha256 "aafd9a0a539021c8a12c44af3158f36ccf4a20a86eb9c4cff17d62d8d1f862d2"
+      url "https://github.com/steveclarke/outport/releases/download/v0.45.0/outport_0.45.0_linux_amd64.tar.gz"
+      sha256 "3ad99cd7032a332ed108050ab023baf0618815f0bd6788cfaaa24b6d3980d88b"
       define_method(:install) do
         bin.install "outport"
         bash_completion.install "completions/outport.bash" => "outport"
@@ -45,8 +45,8 @@ class Outport < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steveclarke/outport/releases/download/v0.44.0/outport_0.44.0_linux_arm64.tar.gz"
-      sha256 "98ef8de7a0ac78e498b9c12b2a0c808fac9b5321b77c9350ba2851245c2cd101"
+      url "https://github.com/steveclarke/outport/releases/download/v0.45.0/outport_0.45.0_linux_arm64.tar.gz"
+      sha256 "39a91ad484a367558ed7f9dd30964f4bc3104f56e6f20abc6751799d14115f56"
       define_method(:install) do
         bin.install "outport"
         bash_completion.install "completions/outport.bash" => "outport"
